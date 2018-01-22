@@ -1,0 +1,211 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/************************************************************
+HEADER
+*************************************************************/
+
+.navbar {
+  display: flex;
+  color: #f2f2f2;
+  background: #333333;
+  overflow: hidden;
+  height: 40px;
+  padding: 16px 16px;
+}
+
+#main {
+  margin: 0 auto;
+/*  height: 0px;*/
+}
+/* 100,100i,300,300i,400,400i,700,700i,900,900i */
+#main h1 {
+  margin: 0 auto;
+}
+
+.background {
+  background: linear-gradient(0deg, white, transparent 20%),
+              #333333 url('../img/sophie.jpg')  no-repeat center;
+  background-size: cover;
+  padding: 37.513px 15% 20%;
+  margin-bottom: 30px;
+}
+
+.intro {
+  background: white;
+  opacity: 0.65;
+  line-height: 40px;
+  letter-spacing: 4px;
+  padding: 20px;
+}
+
+/************************************************************
+SIDE NAV
+*************************************************************/
+
+svg {
+  padding-top: 3px;
+  transition: 1s;
+}
+
+svg:hover {
+  opacity: 0.3;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  opacity: 0.9;
+  overflow-x: hidden;
+  text-align: center;
+  transition: 0.5s;
+  padding-top: 90px;
+}
+
+.side-nav a,
+.btn-close {
+  display: block;
+  font-weight: 400;
+  color: white;
+  padding: 15px;
+  transition: 1s;
+}
+
+.side-nav a:hover,
+.btn-close:hover {
+  background: white;
+  color: black;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+/************************************************************
+MAIN
+*************************************************************/
+
+.about-me {
+  margin-bottom: 40px;
+}
+
+.about-me h2 {
+  margin-bottom: 30px;
+}
+
+.about-me h2,
+.about-me p {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.about-me p {
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+
+
+/************************************************************
+PORTFOLIO
+*************************************************************/
+
+.portfolio {
+  background: #333333;
+  text-align: center;
+  padding-top: 20px
+}
+
+.portfolio h2 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.portfolio img {
+  width: 80%;
+  border: 2px solid grey;
+  padding: 3px;
+  transition: 1s;
+  margin-bottom: 10px;
+}
+
+.portfolio img:hover {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
