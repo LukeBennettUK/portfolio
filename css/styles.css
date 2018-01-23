@@ -152,7 +152,8 @@ PORTFOLIO
 .portfolio {
   background: #333333;
   text-align: center;
-  padding-top: 20px
+  padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .portfolio h2 {
@@ -172,7 +173,27 @@ PORTFOLIO
   opacity: 0.6;
 }
 
+/************************************************************
+RESUME
+*************************************************************/
 
+.resume {
+  height: 500px;
+}
+
+.resume a {
+  display: block;
+  background: black;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.resume a:hover {
+  opacity: 0.4;
+}
 
 
 
