@@ -25,7 +25,7 @@
         </span>
 
         <div id="main">
-          <h1>Luke Bennett</h1>
+          <h1><a href="#">Luke Bennett</a></h1>
         </div>
 
   <!--
@@ -46,9 +46,9 @@
         <span class="btn-close" onclick="closeSideMenu()">&times;</span>
         <a href="#">Home</a>
         <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <a href="#portfolio-link">Portfolio</a>
+        <a href="#resume-link">Resume</a>
+        <a href="#contact">Contact</a>
       </div>
       
       <!-- Introduction -->
@@ -63,9 +63,9 @@
       
       <!-- About Me -->
     
-      <div class="about-me">
+      <div class="about-me"><a id="about"></a>
         
-        <h2><a id="about">About Me</a></h2>
+        <h2>About Me</h2>
 
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
 
@@ -75,17 +75,46 @@
       
       <!-- Portfolio -->
       
-      <div class="portfolio">
+      <div class="portfolio"><a id="portfolio-link"></a>
       
-        <h2><a id="portfolio">Portfolio</a></h2>
+        <h2>Portfolio</h2>
         
         <!-- Front Page -->
         <a href="http://www.donjaswell-beingforkids.co.uk/" target="_blank"><img src="img/well-being/well-being.png" alt="Donjas-Well-Being-For-Kids"/></a>
         
       </div>
     
+      <!-- Resume -->
+      
       <div class="resume">
-        <a href="documents/Luke-Bennett-Resume.pdf" target="_blank">Download Resume</a>
+        <a href="documents/Luke-Bennett-Resume.pdf" id="resume-link" target="_blank">Download Resume</a>
+      </div>
+      
+      <!-- Contact Form -->
+      
+      <div class="contact-form"><a id="contact"></a>
+      
+        <form>
+          <fieldset>
+            <legend>Contact Form</legend>
+            
+            <ul>
+              
+              <li>
+                <label for="name">Full Name</label>
+                <input required type="text" id="name" name="full_name" placeholder="Required">
+              </li>
+              
+              <li>
+                <label for="email">Email</label>
+                <input required type="text" id="email" name="email_address" placeholder="Required">
+              </li>
+              
+            </ul>
+            
+          </fieldset>          
+        </form>
+      
       </div>
     
     </main>

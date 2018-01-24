@@ -2,6 +2,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  background: #969DA3;
+}
+
 h1 {
   font-size: 1.7rem;
   font-weight: 300;
@@ -20,10 +24,12 @@ p {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 /************************************************************
@@ -32,8 +38,8 @@ HEADER
 
 .navbar {
   display: flex;
-  color: #f2f2f2;
-  background: #333333;
+  color: white;
+  background: #969DA3;
   overflow: hidden;
   height: 40px;
   padding: 16px 16px;
@@ -41,15 +47,14 @@ HEADER
 
 #main {
   margin: 0 auto;
-/*  height: 0px;*/
 }
-/* 100,100i,300,300i,400,400i,700,700i,900,900i */
+
 #main h1 {
   margin: 0 auto;
 }
 
 .background {
-  background: linear-gradient(0deg, white, transparent 20%),
+  background: linear-gradient(0deg, #969DA3, transparent 5%),
               #333333 url('../img/sophie.jpg')  no-repeat center;
   background-size: cover;
   padding: 37.513px 15% 20%;
@@ -125,6 +130,7 @@ MAIN
 
 .about-me {
   margin-bottom: 40px;
+  color: white;
 }
 
 .about-me h2 {
@@ -150,23 +156,22 @@ PORTFOLIO
 *************************************************************/
 
 .portfolio {
-  background: #333333;
+  background: #DCEAF5;
   text-align: center;
-  padding-top: 20px;
-  margin-bottom: 30px;
+  padding: 20px 20px 50px;
 }
 
 .portfolio h2 {
-  color: white;
+  color: black;
   margin-bottom: 40px;
 }
 
 .portfolio img {
   width: 80%;
-  border: 2px solid grey;
   padding: 3px;
   transition: 1s;
   margin-bottom: 10px;
+  border: 2px solid grey;
 }
 
 .portfolio img:hover {
@@ -177,28 +182,81 @@ PORTFOLIO
 RESUME
 *************************************************************/
 
+/* #DCEAF5 #659EB8 */
+
 .resume {
-  height: 500px;
+  display: flex;
+  background: #969DA3;
+  padding: 10%;
 }
 
 .resume a {
   display: block;
-  background: black;
-  color: white;
-  font-size: 2rem;
+  background: #DCEAF5;
+  color: black;
+  font-size: 1.2rem;
   text-align: center;
-  padding: 15px;
+  margin: auto;
+  padding: 7%;
+  border-radius: 5px;
   transition: 0.5s;
 }
 
 .resume a:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 
+/************************************************************
+CONTACT
+*************************************************************/
 
+.contact-form {
+  background: #cc8c33;
+  height: 500px;
+  padding: 20% 10%;
+}
 
+fieldset {
+  border: 0;
+}
 
+legend {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+label {
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+}
+
+input {
+  box-sizing: border-box;
+  border-style: none;
+  width: 99%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid #cc8c33;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+input:focus {
+  border: 2px solid #969DA3;
+  background: #fff;
+  outline: none;
+}
+
+::placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.7rem;
+  padding-right: 1px;
+}
 
 
 
