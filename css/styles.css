@@ -1,9 +1,8 @@
-* {
+*,
+input,
+textarea,
+button {
   font-family: 'Lato', sans-serif;
-}
-
-body {
-  background: #969DA3;
 }
 
 h1 {
@@ -29,7 +28,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 /************************************************************
@@ -38,26 +36,27 @@ HEADER
 
 .navbar {
   display: flex;
-  color: white;
-  background: #969DA3;
+  position: fixed;
   overflow: hidden;
   height: 40px;
   padding: 16px 16px;
+  align-items: center;
+  
 }
 
 #main {
   margin: 0 auto;
 }
 
-#main h1 {
-  margin: 0 auto;
+#main a {
+  color: black;
 }
 
 .background {
-  background: linear-gradient(0deg, #969DA3, transparent 5%),
+  background: linear-gradient(0deg, #fff, transparent 40%),
               #333333 url('../img/sophie.jpg')  no-repeat center;
   background-size: cover;
-  padding: 37.513px 15% 20%;
+  padding-bottom: 50%;
   margin-bottom: 30px;
 }
 
@@ -67,6 +66,7 @@ HEADER
   line-height: 40px;
   letter-spacing: 4px;
   padding: 20px;
+  margin: 0 15% 15%;
 }
 
 /************************************************************
@@ -76,6 +76,10 @@ SIDE NAV
 svg {
   padding-top: 3px;
   transition: 1s;
+/*
+  border: 1px solid black;
+  border-radius: 50%;
+*/
 }
 
 svg:hover {
@@ -128,9 +132,12 @@ svg:hover {
 MAIN
 *************************************************************/
 
+main {
+  margin-bottom: 0
+}
+
 .about-me {
   margin-bottom: 40px;
-  color: white;
 }
 
 .about-me h2 {
@@ -234,21 +241,25 @@ label {
   margin-bottom: 10px;
 }
 
-input {
+input,
+textarea {
   box-sizing: border-box;
-  border-style: none;
-  width: 99%;
   border-radius: 5px;
   padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #969DA3;
+  outline: none;
+}
+
+input {
+  border-style: none;
+  width: 100%;
   border: 2px solid #cc8c33;
   margin-bottom: 10px;
   transition: 0.5s;
-}
-
-input:focus {
-  border: 2px solid #969DA3;
-  background: #fff;
-  outline: none;
 }
 
 ::placeholder {
@@ -258,9 +269,44 @@ input:focus {
   padding-right: 1px;
 }
 
+/* Textarea styling */
 
+textarea {
+  height: 110px;
+  resize: none;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #cc8c33;
+}
 
+/* Button styling */
 
+button {
+  border: none;
+  background: lightblue;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #DCEAF5;
+  color: black;
+}
+
+/************************************************************
+SOCIAL
+*************************************************************/
+
+footer {
+  background: lightblue;
+  height: 500px;
+}
 
 
 

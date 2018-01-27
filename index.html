@@ -12,48 +12,51 @@
     
     <header>
       
-      <nav class="navbar">
-        <span class="open-slide" onclick="openSideMenu()">
-<!--          <a href="#" onclick="openSideMenu()">-->
-          
-            <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#fff" stroke-width="4"/>
-              <path d="M0,14 30,14" stroke="#fff" stroke-width="4"/>
-              <path d="M0,23 30,23" stroke="#fff" stroke-width="4"/>
-            </svg>
-<!--          </a>-->
-        </span>
 
-        <div id="main">
-          <h1><a href="#">Luke Bennett</a></h1>
-        </div>
-
-  <!--
-        <ul class="navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-  -->
-
-      </nav>
-
-    <!-- Side Navigation Bar -->
-
-      <div id="side-menu" class="side-nav">
-        <span class="btn-close" onclick="closeSideMenu()">&times;</span>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio-link">Portfolio</a>
-        <a href="#resume-link">Resume</a>
-        <a href="#contact">Contact</a>
-      </div>
       
       <!-- Introduction -->
       
       <div class="background">
+        
+        <nav class="navbar">
+          <span class="open-slide" onclick="openSideMenu()">
+  <!--          <a href="#" onclick="openSideMenu()">-->
+
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="4"/>
+                <path d="M0,14 30,14" stroke="#000" stroke-width="4"/>
+                <path d="M0,23 30,23" stroke="#000" stroke-width="4"/>
+              </svg>
+  <!--          </a>-->
+          </span>
+
+          <div id="main">
+            <h1><a href="#">Luke Bennett</a></h1>
+          </div>
+
+    <!--
+          <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+    -->
+
+        </nav>
+
+      <!-- Side Navigation Bar -->
+
+        <div id="side-menu" class="side-nav">
+          <span class="btn-close exit" onclick="closeSideMenu()">&times;</span>
+          <a href="#">Home</a>
+          <a onclick="closeSideMenu()" href="#about">About</a>
+          <a onclick="closeSideMenu()" href="#portfolio-link">Portfolio</a>
+          <a onclick="closeSideMenu()" href="#resume-link">Resume</a>
+          <a onclick="closeSideMenu()" href="#contact">Contact</a>
+        </div>
+        
         <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       
@@ -101,7 +104,7 @@
             <ul>
               
               <li>
-                <label for="name">Full Name</label>
+                <label for="name">Name</label>
                 <input required type="text" id="name" name="full_name" placeholder="Required">
               </li>
               
@@ -109,6 +112,13 @@
                 <label for="email">Email</label>
                 <input required type="text" id="email" name="email_address" placeholder="Required">
               </li>
+              
+              <li>
+                <label for="message">Message</label>
+                <textarea id="message" name="other_topics"></textarea>
+              </li>
+
+              <button type="submit">Hello!</button>
               
             </ul>
             
@@ -118,6 +128,12 @@
       </div>
     
     </main>
+    
+    <footer>
+      
+      <p>My name is Luke Bennett and I am a Human - Luke Bennett</p>
+      
+    </footer>
     
     
     
