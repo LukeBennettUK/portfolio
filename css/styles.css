@@ -141,12 +141,14 @@ main {
 }
 
 .about-me h2 {
+  text-transform: uppercase;
+  text-align: center;
   margin-bottom: 30px;
 }
 
 .about-me h2,
 .about-me p {
-  text-align: center;
+  font-family: 'Indie Flower';
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -162,26 +164,52 @@ main {
 PORTFOLIO
 *************************************************************/
 
-.portfolio {
-  background: #DCEAF5;
+.portfolio1,
+.portfolio2,
+.portfolio3,
+.portfolio4 {
   text-align: center;
-  padding: 20px 20px 50px;
+  padding: 10px 0 0px;
 }
 
+.portfolio1 {
+  background: #DCEAF5;
+}
+
+.portfolio2 {
+  background: red;
+}
+
+.portfolio3 {
+  background: black;
+}
+
+.portfolio4 {
+  background: yellow;
+}
+
+/*
 .portfolio h2 {
   color: black;
   margin-bottom: 40px;
 }
+*/
 
-.portfolio img {
-  width: 80%;
+.portfolio1 img,
+.portfolio2 img,
+.portfolio3 img,
+.portfolio4 img {
+  width: 20%;
   padding: 3px;
   transition: 1s;
   margin-bottom: 10px;
-  border: 2px solid grey;
+  transform: rotate(5deg);
 }
 
-.portfolio img:hover {
+.portfolio1 img:hover,
+.portfolio2 img:hover,
+.portfolio3 img:hover,
+.portfolio4 img:hover {
   opacity: 0.6;
 }
 
@@ -304,15 +332,29 @@ SOCIAL
 *************************************************************/
 
 footer {
+  display: flex;
   background: lightblue;
+  color: white;
   height: 500px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
+footer p {
+  font-size: 1.2rem;
+  font-family: 'Indie Flower', sans-serif;
+  text-align: center;
+  margin: auto;
+}
 
+footer q {
+  font-size: 2em;
+  font-family: 'Dancing Script', sans-serif;
+}
 
+/*Indie+Flower|Pacifico*/
 
-
-
+/*font-family: 'Lato', sans-serif;*/
 
 
 
