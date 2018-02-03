@@ -19,15 +19,13 @@
       <div class="background">
         
         <nav class="navbar">
+          
           <span class="open-slide" onclick="openSideMenu()">
-  <!--          <a href="#" onclick="openSideMenu()">-->
-
               <svg width="30" height="30">
                 <path d="M0,5 30,5" stroke="#000" stroke-width="4"/>
                 <path d="M0,14 30,14" stroke="#000" stroke-width="4"/>
                 <path d="M0,23 30,23" stroke="#000" stroke-width="4"/>
               </svg>
-  <!--          </a>-->
           </span>
 
           <div id="main">
@@ -50,7 +48,7 @@
 
         <div id="side-menu" class="side-nav">
           <span class="btn-close exit" onclick="closeSideMenu()">&times;</span>
-          <a href="#">Home</a>
+          <a onclick="closeSideMenu()" href="#">Home</a>
           <a onclick="closeSideMenu()" href="#about">About</a>
           <a onclick="closeSideMenu()" href="#portfolio-link">Portfolio</a>
           <a onclick="closeSideMenu()" href="#resume-link">Resume</a>
@@ -58,6 +56,7 @@
         </div>
         
         <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
       </div>
       
     </header>
